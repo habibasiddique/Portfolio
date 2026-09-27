@@ -1,5 +1,6 @@
 
 import Button from "../ui/Button";
+import HeroBackground from "../ui/HeroBackground";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import profile from "../../assets/images/habiba.png";
@@ -7,9 +8,10 @@ function Hero({ darkMode }) {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center pt-18"
+      className="relative min-h-screen flex items-center pt-18 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto w-full px-6 ">
+      {darkMode && <HeroBackground />}
+      <div className="max-w-7xl mx-auto w-full px-6 relative z-10">
 
         <div className="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
 

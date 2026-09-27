@@ -1,14 +1,16 @@
 import Button from "../ui/Button";
+import HeroBackground from "../ui/HeroBackground";
 import { Link } from "react-router-dom";
 
 function AchievementsHero({ darkMode }) {
   return (
     <section
-      className={`pt-36 pb-24 transition-all duration-300 ${
+      className={`relative overflow-hidden pt-36 pb-24 transition-all duration-300 ${
         darkMode ? "bg-[#090E1A]" : "bg-gray-50"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      {darkMode && <HeroBackground />}
+      <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
 
         {/* Badge */}
 

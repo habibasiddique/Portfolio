@@ -4,6 +4,9 @@ import { useState } from "react";
 
 import hackathon from "../../assets/certificates/hackathon.png.png";
 import cs50x from "../../assets/certificates/cs50x.png.png";
+import cs50PuzzleDay2025 from "../../assets/certificates/cs50-puzzle-day-2025.png";
+import raiseYourHack from "../../assets/certificates/raise-your-hack.png";
+import aiFactory from "../../assets/certificates/ai-factory.png";
 
 
 function Certificates({ darkMode }) {
@@ -17,6 +20,18 @@ function Certificates({ darkMode }) {
         {
             image: cs50x,
             title: "Harvard CS50x Puzzle Day",
+        },
+        {
+            image: cs50PuzzleDay2025,
+            title: "CS50x Puzzle Day 2025 — Harvard CS50 (9/9 Puzzles Solved)",
+        },
+        {
+            image: raiseYourHack,
+            title: "Raise Your Hack — lablab.ai (Jul 2025)",
+        },
+        {
+            image: aiFactory,
+            title: "AI Factory — lablab.ai (Aug 2026)",
         },
     ];
 

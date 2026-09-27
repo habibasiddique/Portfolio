@@ -1,12 +1,14 @@
 import Button from "../ui/Button";
+import HeroBackground from "../ui/HeroBackground";
 
 function ProjectsHero({ darkMode }) {
   return (
     <section
-      className={`min-h-[75vh] flex items-center transition-all  duration-300 ${darkMode ? "bg-[#090E1A]" : "bg-gray-50"
+      className={`relative overflow-hidden min-h-[75vh] flex items-center transition-all  duration-300 ${darkMode ? "bg-[#090E1A]" : "bg-gray-50"
         }`}
     >
-      <div className="max-w-7xl mx-auto px-20 text-center">
+      {darkMode && <HeroBackground />}
+      <div className="max-w-7xl mx-auto px-20 text-center relative z-10">
 
         {/* Badge */}
 

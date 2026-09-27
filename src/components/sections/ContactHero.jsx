@@ -1,11 +1,14 @@
+import HeroBackground from "../ui/HeroBackground";
+
 function ContactHero({ darkMode }) {
   return (
     <section
-      className={`pt-40 pb-24 transition-all duration-300 ${
+      className={`relative overflow-hidden pt-40 pb-24 transition-all duration-300 ${
         darkMode ? "bg-[#090E1A]" : "bg-gray-50"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      {darkMode && <HeroBackground />}
+      <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
 
         <span className="inline-flex items-center rounded-full border border-purple-500/20 bg-purple-500/10 px-5 py-2 text-sm font-semibold tracking-wide text-purple-400">
           📬 GET IN TOUCH
